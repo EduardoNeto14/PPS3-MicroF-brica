@@ -1,0 +1,79 @@
+version: '2.1'
+services:
+  zookeeper-stv:
+    image: wurstmeister/zookeeper
+    container_name: zookeeper-stv
+    ports:
+      - "2182:2181"
+    restart: unless-stopped
+    networks:
+      - stv-pps3
+  
+  kafka-stv:
+    image: wurstmeister/kafka
+    depends_on:
+      - zookeeper-stv
+    container_name: kafka-stv
+    ports:
+      - "9093:9092"
+    environment:
+      KAFKA_ADVERTISED_HOST_NAME: kafka-stv
+      KAFKA_ZOOKEEPER_CONNECT: zookeeper-stv:2181
+      KAFKA_CREATE_TOPICS: "smarthub:1:1"
+    restart: unless-stopped
+    healthcheck:
+      test: nc -z localhost 9092 || exit -1
+      interval: 5s
+      timeout: 10s
+      retries: 5
+    networks:
+      - stv-pps3
+  
+  parser:
+    build:
+      context: .
+      dockerfile: Dockerfile-Parser
+    image: stv_pps3_smarthub_parser:1.0
+    depends_on:
+      kafka-stv:
+        condition: service_healthy
+    container_name: stv_pps3_smarthub_parser
+    volumes:
+      - ./parser:/home/parser:rw
+    restart: unless-stopped
+    networks:
+      - stv-pps3
+  
+  historian:
+    build:
+      context: .
+      dockerfile: Dockerfile-Historian
+    image: stv_pps3_smarthub_historian:1.0
+    depends_on:
+      kafka-stv:
+        condition: service_healthy
+    container_name: stv_pps3_smarthub_historian
+    volumes:
+      - ./historian:/home/historian:rw
+    restart: unless-stopped
+    networks:
+      - stv-pps3
+  
+  connector:
+    build:
+      context: .
+      dockerfile: Dockerfile-Connector
+    image: stv_pps3_smarthub_connector:1.0
+    depends_on:
+      kafka-stv:
+        condition: service_healthy
+    container_name: stv_pps3_smarthub_connector
+    volumes:
+      - ./connector:/home/connector:rw
+    restart: unless-stopped
+    networks:
+      - stv-pps3
+
+networks:
+  stv-pps3:
+    driver: bridge

@@ -1,0 +1,287 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<?mso-application progid="Excel.Sheet"?>
+<ss:Workbook xmlns:ss="urn:schemas-microsoft-com:office:spreadsheet">
+	<ss:Styles>
+		<ss:Style ss:ID="1">
+			<ss:Font ss:Bold="1"/>
+		</ss:Style>
+		<ss:Style ss:ID="2">
+			<ss:NumberFormat ss:Format="dd-mm-yyyy hh:mm:ss"/>
+		</ss:Style>
+		<ss:Style ss:ID="3" ss:Name="Hyperlink">
+			<ss:Font ss:FontName="Calibri" ss:Size="11" ss:Color="#0563C1" ss:Underline="Single"/>
+		</ss:Style>
+	</ss:Styles>
+	<ss:Worksheet ss:Name="Machines">
+		<ss:Table>
+			<ss:Column ss:Width="63"/>
+			<ss:Column ss:Width="532"/>
+			<ss:Column ss:Width="140"/>
+			<ss:Column ss:Width="133"/>
+			<ss:Column ss:Width="91"/>
+			<ss:Column ss:Width="147"/>
+			<ss:Column ss:Width="98"/>
+			<ss:Column ss:Width="154"/>
+			<ss:Column ss:Width="98"/>
+			<ss:Column ss:Width="154"/>
+			<ss:Column ss:Width="126"/>
+			<ss:Column ss:Width="182"/>
+			<ss:Column ss:Width="140"/>
+			<ss:Column ss:Width="196"/>
+			<ss:Column ss:Width="119"/>
+			<ss:Column ss:Width="175"/>
+			<ss:Column ss:Width="161"/>
+			<ss:Column ss:Width="217"/>
+			<ss:Column ss:Width="126"/>
+			<ss:Column ss:Width="182"/>
+			<ss:Row ss:StyleID="1">
+				<ss:Cell>
+					<ss:Data ss:Type="String">MachineID</ss:Data>
+				</ss:Cell>
+				<ss:Cell>
+					<ss:Data ss:Type="String">MachineName</ss:Data>
+				</ss:Cell>
+				<ss:Cell>
+					<ss:Data ss:Type="String">ReportStartTimestamp</ss:Data>
+				</ss:Cell>
+				<ss:Cell>
+					<ss:Data ss:Type="String">ReportEndTimestamp</ss:Data>
+				</ss:Cell>
+				<ss:Cell>
+					<ss:Data ss:Type="String">OnlineTime(s)</ss:Data>
+				</ss:Cell>
+				<ss:Cell>
+					<ss:Data ss:Type="String">OnlineTimeRelative(%)</ss:Data>
+				</ss:Cell>
+				<ss:Cell>
+					<ss:Data ss:Type="String">OfflineTime(s)</ss:Data>
+				</ss:Cell>
+				<ss:Cell>
+					<ss:Data ss:Type="String">OfflineTimeRelative(%)</ss:Data>
+				</ss:Cell>
+				<ss:Cell>
+					<ss:Data ss:Type="String">CuttingTime(s)</ss:Data>
+				</ss:Cell>
+				<ss:Cell>
+					<ss:Data ss:Type="String">CuttingTimeRelative(%)</ss:Data>
+				</ss:Cell>
+				<ss:Cell>
+					<ss:Data ss:Type="String">AutoNestingTime(s)</ss:Data>
+				</ss:Cell>
+				<ss:Cell>
+					<ss:Data ss:Type="String">AutoNestingTimeRelative(%)</ss:Data>
+				</ss:Cell>
+				<ss:Cell>
+					<ss:Data ss:Type="String">ManualNestingTime(s)</ss:Data>
+				</ss:Cell>
+				<ss:Cell>
+					<ss:Data ss:Type="String">ManualNestingTimeRelative(%)</ss:Data>
+				</ss:Cell>
+				<ss:Cell>
+					<ss:Data ss:Type="String">DigitizingTime(s)</ss:Data>
+				</ss:Cell>
+				<ss:Cell>
+					<ss:Data ss:Type="String">DigitizingTimeRelative(%)</ss:Data>
+				</ss:Cell>
+				<ss:Cell>
+					<ss:Data ss:Type="String">ConveyorMovementTime(s)</ss:Data>
+				</ss:Cell>
+				<ss:Cell>
+					<ss:Data ss:Type="String">ConveyorMovementTimeRelative(%)</ss:Data>
+				</ss:Cell>
+				<ss:Cell>
+					<ss:Data ss:Type="String">MaintenanceTime(s)</ss:Data>
+				</ss:Cell>
+				<ss:Cell>
+					<ss:Data ss:Type="String">MaintenanceTimeRelative(%)</ss:Data>
+				</ss:Cell>
+			</ss:Row>
+			<ss:Row>
+				<ss:Cell>
+					<ss:Data ss:Type="Number">2</ss:Data>
+				</ss:Cell>
+				<ss:Cell>
+					<ss:Data ss:Type="String">SPRO-086F66B8314D - MindCUT Digital Inspection and Virtual Annotation - DIVA</ss:Data>
+				</ss:Cell>
+				<ss:Cell ss:StyleID="2">
+					<ss:Data ss:Type="DateTime">1990-01-01T00:00:00Z</ss:Data>
+				</ss:Cell>
+				<ss:Cell ss:StyleID="2">
+					<ss:Data ss:Type="DateTime">2022-01-06T09:59:22Z</ss:Data>
+				</ss:Cell>
+				<ss:Cell>
+					<ss:Data ss:Type="Number">281383</ss:Data>
+				</ss:Cell>
+				<ss:Cell>
+					<ss:Data ss:Type="Number">0.000279</ss:Data>
+				</ss:Cell>
+				<ss:Cell>
+					<ss:Data ss:Type="Number">1010029779</ss:Data>
+				</ss:Cell>
+				<ss:Cell>
+					<ss:Data ss:Type="Number">0.999721</ss:Data>
+				</ss:Cell>
+				<ss:Cell>
+					<ss:Data ss:Type="Number">0</ss:Data>
+				</ss:Cell>
+				<ss:Cell>
+					<ss:Data ss:Type="Number">0.000000</ss:Data>
+				</ss:Cell>
+				<ss:Cell>
+					<ss:Data ss:Type="Number">0</ss:Data>
+				</ss:Cell>
+				<ss:Cell>
+					<ss:Data ss:Type="Number">0.000000</ss:Data>
+				</ss:Cell>
+				<ss:Cell>
+					<ss:Data ss:Type="Number">0</ss:Data>
+				</ss:Cell>
+				<ss:Cell>
+					<ss:Data ss:Type="Number">0.000000</ss:Data>
+				</ss:Cell>
+				<ss:Cell>
+					<ss:Data ss:Type="Number">0</ss:Data>
+				</ss:Cell>
+				<ss:Cell>
+					<ss:Data ss:Type="Number">0.000000</ss:Data>
+				</ss:Cell>
+				<ss:Cell>
+					<ss:Data ss:Type="Number">0</ss:Data>
+				</ss:Cell>
+				<ss:Cell>
+					<ss:Data ss:Type="Number">0.000000</ss:Data>
+				</ss:Cell>
+				<ss:Cell>
+					<ss:Data ss:Type="Number">0</ss:Data>
+				</ss:Cell>
+				<ss:Cell>
+					<ss:Data ss:Type="Number">0.000000</ss:Data>
+				</ss:Cell>
+			</ss:Row>
+			<ss:Row>
+				<ss:Cell>
+					<ss:Data ss:Type="Number">4</ss:Data>
+				</ss:Cell>
+				<ss:Cell>
+					<ss:Data ss:Type="String">MACHINE</ss:Data>
+				</ss:Cell>
+				<ss:Cell ss:StyleID="2">
+					<ss:Data ss:Type="DateTime">1990-01-01T00:00:00Z</ss:Data>
+				</ss:Cell>
+				<ss:Cell ss:StyleID="2">
+					<ss:Data ss:Type="DateTime">2022-01-06T09:59:22Z</ss:Data>
+				</ss:Cell>
+				<ss:Cell>
+					<ss:Data ss:Type="Number">251268</ss:Data>
+				</ss:Cell>
+				<ss:Cell>
+					<ss:Data ss:Type="Number">0.000249</ss:Data>
+				</ss:Cell>
+				<ss:Cell>
+					<ss:Data ss:Type="Number">1010059894</ss:Data>
+				</ss:Cell>
+				<ss:Cell>
+					<ss:Data ss:Type="Number">0.999751</ss:Data>
+				</ss:Cell>
+				<ss:Cell>
+					<ss:Data ss:Type="Number">235</ss:Data>
+				</ss:Cell>
+				<ss:Cell>
+					<ss:Data ss:Type="Number">0.000935</ss:Data>
+				</ss:Cell>
+				<ss:Cell>
+					<ss:Data ss:Type="Number">336</ss:Data>
+				</ss:Cell>
+				<ss:Cell>
+					<ss:Data ss:Type="Number">0.001337</ss:Data>
+				</ss:Cell>
+				<ss:Cell>
+					<ss:Data ss:Type="Number">637</ss:Data>
+				</ss:Cell>
+				<ss:Cell>
+					<ss:Data ss:Type="Number">0.002535</ss:Data>
+				</ss:Cell>
+				<ss:Cell>
+					<ss:Data ss:Type="Number">0</ss:Data>
+				</ss:Cell>
+				<ss:Cell>
+					<ss:Data ss:Type="Number">0.000000</ss:Data>
+				</ss:Cell>
+				<ss:Cell>
+					<ss:Data ss:Type="Number">48</ss:Data>
+				</ss:Cell>
+				<ss:Cell>
+					<ss:Data ss:Type="Number">0.000191</ss:Data>
+				</ss:Cell>
+				<ss:Cell>
+					<ss:Data ss:Type="Number">0</ss:Data>
+				</ss:Cell>
+				<ss:Cell>
+					<ss:Data ss:Type="Number">0.000000</ss:Data>
+				</ss:Cell>
+			</ss:Row>
+			<ss:Row>
+				<ss:Cell>
+					<ss:Data ss:Type="Number">6</ss:Data>
+				</ss:Cell>
+				<ss:Cell>
+					<ss:Data ss:Type="String">RicardoCarranca_G3XL3200</ss:Data>
+				</ss:Cell>
+				<ss:Cell ss:StyleID="2">
+					<ss:Data ss:Type="DateTime">1990-01-01T00:00:00Z</ss:Data>
+				</ss:Cell>
+				<ss:Cell ss:StyleID="2">
+					<ss:Data ss:Type="DateTime">2022-01-06T09:59:22Z</ss:Data>
+				</ss:Cell>
+				<ss:Cell>
+					<ss:Data ss:Type="Number">3016</ss:Data>
+				</ss:Cell>
+				<ss:Cell>
+					<ss:Data ss:Type="Number">0.000003</ss:Data>
+				</ss:Cell>
+				<ss:Cell>
+					<ss:Data ss:Type="Number">1010308146</ss:Data>
+				</ss:Cell>
+				<ss:Cell>
+					<ss:Data ss:Type="Number">0.999997</ss:Data>
+				</ss:Cell>
+				<ss:Cell>
+					<ss:Data ss:Type="Number">86</ss:Data>
+				</ss:Cell>
+				<ss:Cell>
+					<ss:Data ss:Type="Number">0.028515</ss:Data>
+				</ss:Cell>
+				<ss:Cell>
+					<ss:Data ss:Type="Number">74</ss:Data>
+				</ss:Cell>
+				<ss:Cell>
+					<ss:Data ss:Type="Number">0.024536</ss:Data>
+				</ss:Cell>
+				<ss:Cell>
+					<ss:Data ss:Type="Number">55</ss:Data>
+				</ss:Cell>
+				<ss:Cell>
+					<ss:Data ss:Type="Number">0.018236</ss:Data>
+				</ss:Cell>
+				<ss:Cell>
+					<ss:Data ss:Type="Number">0</ss:Data>
+				</ss:Cell>
+				<ss:Cell>
+					<ss:Data ss:Type="Number">0.000000</ss:Data>
+				</ss:Cell>
+				<ss:Cell>
+					<ss:Data ss:Type="Number">3</ss:Data>
+				</ss:Cell>
+				<ss:Cell>
+					<ss:Data ss:Type="Number">0.000995</ss:Data>
+				</ss:Cell>
+				<ss:Cell>
+					<ss:Data ss:Type="Number">0</ss:Data>
+				</ss:Cell>
+				<ss:Cell>
+					<ss:Data ss:Type="Number">0.000000</ss:Data>
+				</ss:Cell>
+			</ss:Row>
+		</ss:Table>
+	</ss:Worksheet>
+</ss:Workbook>
