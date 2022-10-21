@@ -66,6 +66,7 @@ def subscribe(client, topic):
             data = float(data)
         
         gen_msg = {
+            "timestamp" : time.time(),
             "id" : parse_topic[1],
             "measure" : parse_topic[-1] if len(parse_topic) == 5 else parse_topic[-2],
             "channel" : parse_topic[-2] if len(parse_topic) == 5 else parse_topic[-1],
